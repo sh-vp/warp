@@ -118,9 +118,9 @@ fi
     
     esac
     
-    warp-cli proxy port 10864
-    warp-cli mode proxy
     warp-cli registration new
+    warp-cli mode proxy
+    warp-cli proxy port 10864
     warp-cli connect    
 
     header

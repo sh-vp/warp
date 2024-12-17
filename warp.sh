@@ -129,6 +129,6 @@ fi
     echo ""
     echo -e "${blue}Socks-Port :${White} 10864${nc}"
     echo ""
-    warp-cli 
+    warp-cli status
     echo ""
     echo -e "${red}==================================${nc}"

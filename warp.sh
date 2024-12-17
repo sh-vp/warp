@@ -117,15 +117,18 @@ fi
     exit 1
     
     esac
-    
-    warp-cli registration new
+
+
+    echo "y" | warp-cli registration new
     warp-cli mode proxy
     warp-cli proxy port 10864
-    warp-cli connect    
-
+    echo "y" | warp-cli connect    
+    clear
     header
-echo -e "${green}Service Successfully Installed !${nc}"
-echo ""
-echo -e "${blue}Socks-Port :${White} 10864${nc}"
-echo ""
-echo -e "${red}==================================${nc}"
+    echo -e "${green}Service Successfully Installed !${nc}"
+    echo ""
+    echo -e "${blue}Socks-Port :${White} 10864${nc}"
+    echo ""
+    warp-cli 
+    echo ""
+    echo -e "${red}==================================${nc}"
